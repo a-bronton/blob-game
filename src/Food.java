@@ -6,7 +6,7 @@ public class Food {
     int width, height;
     double xSpeed = 0;
     double ySpeed = 0;
-    double velocity = 0.3;
+    double velocity = 0.2;
 
     Rectangle hitbox;
 

@@ -17,8 +17,10 @@ public class MouseHandler implements MouseListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
-        gp.blob.addFood(e.getX(), e.getY());
-        mousePressed = true;
+        if (e.getButton() == MouseEvent.BUTTON1) {
+            gp.blob.addFood(e.getX(), e.getY());
+            mousePressed = true;
+        }
     }
 
     @Override
